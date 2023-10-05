@@ -17,6 +17,7 @@
   width: 100%;
   height: 80px;
   max-width: 1500px;
+  position: relative;
 }
 
 .nav-logo {
@@ -27,6 +28,17 @@
   text-decoration: none;
   font-size: 2rem;
   flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-logo .icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 16px;
 }
 
 .nav-menu {
@@ -43,9 +55,9 @@
   height: 100%;
   border-bottom: 3px solid transparent;
 }
-.fa-code {
+/* .fa-code {
   margin-left: 1rem;
-}
+} */
 
 .nav-item {
   line-height: 40px;
@@ -73,6 +85,13 @@
 
 .nav-icon {
   display: none;
+  color: #f5b921;
+}
+
+.nav-icon .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media screen and (max-width: 960px) {
@@ -105,13 +124,19 @@
     display: table;
   }
 
+  .nav-logo .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .nav-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    transform: translate(-100%, -50%);
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     color: #ffdd40;
   }
