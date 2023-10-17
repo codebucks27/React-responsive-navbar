@@ -1,0 +1,82 @@
+body{
+    background-color: #f0f2f5;
+}
+.inp{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 330px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 14px;
+   line-height: 0px;
+    background: none;
+    border-width: 1px;
+    border-color: #929ead;
+   
+}
+
+.fb{
+    display: flex;
+}
+h3{
+    color: #1877f2;
+    text-align: start;
+    padding-left: 150px;
+}
+p{
+    color: #1c1e21;
+    text-align: start;
+    font-size: 28px;
+    padding-left: 150px;
+}
+.but{
+    color: #ffffff;
+    background-color: #1877f2;
+    width: 364px;
+    padding-top: 6px;
+    font-weight: bold;
+}
+.log{
+    height: 50px;
+}
+.new{
+    background-color: #42b72a;
+    font-weight: bolder;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+}
+.forgot{
+    color: #1877f2;
+    font-style: arial,sans-serif;
+    font-size: medium;
+    text-decoration: none;
+}
+.left{
+    width: 50%;
+    padding: 20px;
+}
+.right{
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    align-items: center;
+    padding: 0px 30px 30px 30px;
+    height: 320px;
+}
+.us{
+    height: 60px;
+}
+.pa{
+    height: 10px;
+}
+.fm{
+    height: 120px;
+}
+.line{
+    padding: 3px;
+    height: 1px;
+}
