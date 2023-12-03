@@ -1,0 +1,96 @@
+.home {
+  /* height: 100vh;
+  width: 100%; */
+  /* margin-top: -150px; */
+  background-color: #8AAAE5;
+}
+
+button{
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: royalblue;
+}
+
+.first {
+  background-image: url('../images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -150px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  /* margin-right: 0; */
+  /* height: 150px; */
+}
+
+.textarea {
+  height: 200px;
+}
+
+.left-pane {
+  overflow-y: scroll;
+  /* background: wheat; */
+  height: 100vh;
+  box-shadow: 0px 0px 5px; /* Increased shadow effect */
+}
+
+.middle-pane {
+  /* background: #e0e0e0; */
+  height: 100vh;
+  box-shadow: 0px 0px 5px; /* Increased shadow effect */
+  color:  #75551A;
+}
+
+.right-pane {
+  /* background: #d0d0d0; */
+  height: 100vh;
+  box-shadow: 0px 0px 5px; /* Increased shadow effect */
+}
+
+.video-container-wrapper {
+  overflow-y: auto;
+}
+
+.video-container.scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.middle-pane .post-title,
+.middle-pane .post-content {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.middle-pane .post-title {
+  animation-delay: 0.2s;
+}
+
+.middle-pane .post-content {
+  animation-delay: 0.4s;
+}

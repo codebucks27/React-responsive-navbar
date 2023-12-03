@@ -1,0 +1,113 @@
+body {
+    background: lightblue;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    background: #1f5156;
+    padding-bottom: 30px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background: white;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+    width: auto;
+    height: 150px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+.input input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    text-align: center;
+}
+
+.submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gray {
+    background: #eaeaea;
+    color: #676767;
+}
+
+/* Responsive CSS Code */
+
+@media screen and (max-width: 768px) {
+    /* Update login-container width for smaller screens */
+    .login-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /* Adjust input width for smaller screens */
+    .input {
+        width: 100%;
+    }
+
+    /* Adjust input input width for smaller screens */
+    .input input {
+        width: 100%;
+    }
+}

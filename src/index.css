@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,26 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+button{
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: royalblue;
 }

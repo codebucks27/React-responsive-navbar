@@ -1,0 +1,49 @@
+.blog-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-top: -300px;
+  overflow-y: auto;
+  max-height:685px; /* Adjust the max-height value as needed */
+}
+
+.blog-title {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+}
+
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: scale(1.05);
+}
+
+.post-title {
+  color: #222;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  color: #555;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.post-content {
+  animation: fadeIn 0.8s ease;
+}

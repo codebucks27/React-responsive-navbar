@@ -1,9 +1,12 @@
 import React from "react";
+// import { Profile } from "../profile/Profile";
+import LoginPage from "../log/LoginPage";
 
 export const About = () => {
   return (
-    <div>
-      <h1>About</h1>
+    <div style={{height:'100vh'}}>
+      <LoginPage />
+      {/* <Profile /> */}
     </div>
   );
 };

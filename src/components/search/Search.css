@@ -1,0 +1,22 @@
+.search-container {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  width: 260px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 370px;
+}
+
+
+.search-results {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.search-results li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,5 @@
+.background-image {
+    background-image: url('../images/anonymity.jpg'); 
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
