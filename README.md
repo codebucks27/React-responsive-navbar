@@ -86,3 +86,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Dependency and tooling update
+
+The original tutorial and CRA notes above are preserved for reference. Current tooling uses Vite 8, React 19, React Router 7, web-vitals 6, Vitest 5, ESLint 10 with ESLint React, and Bun 1.4.2 with `bun.lock`. JSX files use `.jsx`, NavLink uses `end`, and optional performance reporting uses `on*` callbacks with INP replacing FID. TypeScript stays on 6 because the React lint stack needs compiler APIs removed in 7; Node types match Node 24. The existing Browserslist targets remain effective.
+
+Use Bun 1.4.2+ and Node 22.22.2+, 24.15+, or 26+. Run `bun install --frozen-lockfile`, `bun run start` (port 3000), `bun run lint`, `bun run typecheck`, `bun run test`, `bun run build`, and `bun run preview`; `bun run test:watch` enables watch mode. `eject` is retired.
+
+No environment values are required. CRA's public `REACT_APP_*` and `PUBLIC_URL` remain supported; Vite also supports `VITE_*`. Production output remains `build/`, with the original public asset URLs. Hosts must continue serving `build/index.html` for SPA routes.

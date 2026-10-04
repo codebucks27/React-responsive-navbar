@@ -1,10 +1,13 @@
-import React from 'react';
 // import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.jsx';
 // import reportWebVitals from './reportWebVitals';
 import { createRoot } from 'react-dom/client';
-const root = createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error('The root element was not found.');
+}
+const root = createRoot(rootElement);
 root.render(<App />);
 
 // ReactDOM.render(
