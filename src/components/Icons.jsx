@@ -1,6 +1,7 @@
 // here I have used https://react-svgr.com/playground/ to convert svg to react component
 // Here are all the svg Icons that I hae used in this project as a react component
 
+/** @param {import('react').SVGProps<SVGSVGElement>} props */
 export const CodeIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -17,6 +18,7 @@ export const CodeIcon = (props) => (
   </svg>
 );
 
+/** @param {import('react').SVGProps<SVGSVGElement>} props */
 export const HamburgetMenuOpen = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -37,6 +39,7 @@ export const HamburgetMenuOpen = (props) => (
   </svg>
 );
 
+/** @param {import('react').SVGProps<SVGSVGElement>} props */
 export const HamburgetMenuClose = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

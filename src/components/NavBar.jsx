@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
-import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
+import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons.jsx";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -11,7 +11,7 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <NavLink end to="/" className="nav-logo">
             <span>CodeBucks</span>
             {/* <i className="fas fa-code"></i> */}
             <span className="icon">
@@ -22,9 +22,8 @@ function NavBar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
+                end
                 to="/"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -33,9 +32,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                end
                 to="/about"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -44,9 +42,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                end
                 to="/blog"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -55,9 +52,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                end
                 to="/contact"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
